@@ -6,8 +6,6 @@ import lombok.Data;
 @Builder
 @Data
 public class Hello {
-
     public String name;
     public int randomNumber;
-
 }

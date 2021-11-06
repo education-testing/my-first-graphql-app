@@ -1,11 +1,8 @@
-type Hello{
-    name : String!
-    randomNumber : Int
-}
-
 type Query {
-allHellos : [Hello]
+    allHellos : [Hello]
     oneHello : Hello
+    books (author : String) : [Book]
+    booksByReleased (release : ReleaseHistoryInput) : [Book]
 }
 
 schema {
